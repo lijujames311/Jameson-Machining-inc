@@ -11,3 +11,5 @@ Open `index.html` in your web browser. All resources are included in the reposit
 - `index.html` - Main landing page
 - `404.html` - Custom error page
 - Other HTML files provide additional information about services offered.
+
+The pages now include SEO-focused meta tags and an updated web app manifest for better discoverability across search engines and mobile devices.
