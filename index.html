@@ -630,6 +630,26 @@
             flex-direction: column;
             gap: 15px;
         }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 0.6rem 0.9rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            display: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: var(--transition);
+            z-index: 998;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--accent);
+        }
         
         .chat-button {
             background-color: var(--accent);
@@ -1113,6 +1133,7 @@
 <i class="fas fa-comment-dots"></i>
 </div>
 </div>
+<div id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></div>
 <!-- Tawk.to Live Chat -->
 <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -1187,6 +1208,20 @@
                     });
                 }
             });
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
         
         // Initialize Calendly widget
