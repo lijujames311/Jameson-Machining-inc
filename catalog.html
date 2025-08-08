@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalog — Industrial Surplus Hub</title>
+<meta name="description" content="Browse gear grinding wheels, diamond/CBN tools, fixtures, and machinery.">
+<link rel="stylesheet" href="/assets/style.css">
+<script defer src="/assets/app.js"></script>
+</head><body>
+<header class="site-header"><div class="container">
+  <a class="brand" href="/">Industrial Surplus Hub</a>
+  <nav><a href="/catalog.html" aria-current="page">Catalog</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav>
+</div></header>
+<main class="container">
+  <section><h1>Catalog</h1>
+    <div class="filters">
+      <input id="searchInput" type="search" placeholder="Search products…">
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option>Gear Grinding Wheels</option><option>Diamond & CBN Tools</option>
+        <option>Machinery & Equipment</option><option>Fixtures & Tooling</option>
+      </select>
+      <select id="brandFilter">
+        <option value="">All Brands</option>
+        <option>Kapp Niles</option><option>Norton</option><option>Other</option>
+      </select>
+    </div>
+    <div id="catalogGrid" class="grid product-grid"></div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container">
+  <p>A division of Jameson Machining Inc. • Oakville, Ontario • <a href="mailto:info@industrialsurplushub.ca">info@industrialsurplushub.ca</a></p>
+</div></footer>
+</body></html>
