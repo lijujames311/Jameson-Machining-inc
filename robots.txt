@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.jamesonsgrinding.com/sitemap.xml
+
+Sitemap: https://industrialsurplushub.ca/sitemap.xml
